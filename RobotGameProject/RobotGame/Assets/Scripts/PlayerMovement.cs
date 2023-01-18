@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     private PlayerStats stats;
 
+    public bool canMove = true;
 
     private void Start()
     {
@@ -16,13 +17,19 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        GatherInput();
-        Look();
+        if (canMove)
+        {
+            GatherInput();
+            Look();
+        }
     }
 
     private void FixedUpdate()
     {
-        Move();
+        if (canMove)
+        {
+            Move();
+        }
     }
 
     private void GatherInput()
