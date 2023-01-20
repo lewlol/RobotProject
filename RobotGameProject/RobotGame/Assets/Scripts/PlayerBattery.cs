@@ -21,10 +21,14 @@ public class PlayerBattery : MonoBehaviour
             PlayerMovement pm = GetComponent<PlayerMovement>();
             pm.canMove = false;
         }
+    }
 
-        if(batteryLife >= stats.maxBattery)
+    public void AddBattery(float amount)
+    {
+        batteryLife += amount;
+        if (batteryLife >= stats.maxBattery)
         {
-
+            batteryLife = stats.maxBattery;
         }
     }
 }
