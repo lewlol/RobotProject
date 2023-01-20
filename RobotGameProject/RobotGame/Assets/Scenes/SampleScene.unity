@@ -665,6 +665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eStats: {fileID: 11400000, guid: 1f2c1502e9d58034a8dd9791bcb8e4e2, type: 2}
   health: 0
+  damageText: {fileID: 6829575155087014273, guid: 1d86aa6e92c91bb4a94bb23f3053e18e, type: 3}
 --- !u!54 &1335324406
 Rigidbody:
   m_ObjectHideFlags: 0

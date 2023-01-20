@@ -13,16 +13,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        //Rigidbody, Player Stats, and Battery Script References
         _rb = GetComponent<Rigidbody>();
         stats = GetComponent<PlayerStats>();
         pb = GetComponent<PlayerBattery>();
     }
     private void Update()
     {
-        if (canMove)
+        if (canMove) //Check if the player can move
         {
-            GatherInput();
-            Look();
+            GatherInput(); //Determine which way the character is trying to move
+            Look(); //Rotate According to the character input
         }
     }
 
@@ -30,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canMove)
         {
-            Move();
+            Move();//Actually Move the Character
         }
     }
 
