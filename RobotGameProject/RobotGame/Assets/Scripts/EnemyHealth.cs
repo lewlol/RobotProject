@@ -36,7 +36,7 @@ public class EnemyHealth : MonoBehaviour
     public void DamageText(float damage)
     {
         //Damage Text
-        GameObject newDT = Instantiate(damageText, transform.position + new Vector3(0, 2, 0), transform.LookAt(cam.transform));
+        GameObject newDT = Instantiate(damageText, transform.position + new Vector3(0, 2, 0), Quaternion.identity);
         TextMesh tm = newDT.GetComponent<TextMesh>();
         tm.text = damage.ToString();
     }
