@@ -20,11 +20,11 @@ public class EnemyHealth : MonoBehaviour
             float cDamage = (critDamage / 100) * damage;
             float finalDamage = damage + cDamage;
             health -= finalDamage;
-            DamageText(finalDamage);
+            DamageText(finalDamage, Color.yellow);
         }else
         {
             health -= damage;
-            DamageText(damage);
+            DamageText(damage, Color.red);
         }
 
         if(health <= 0)
@@ -33,11 +33,26 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    public void DamageText(float damage)
+    public void DamageText(float damage, Color textColor)
     {
+        //Random Position Modifier
+        float x = Random.Range(-1, 1);
+        float z = Random.Range(-1, 1);
+        float y = Random.Range(1.5f, 2.5f);
+        Vector3 offset = new Vector3(x, y, z);
+
         //Damage Text
-        GameObject newDT = Instantiate(damageText, transform.position + new Vector3(0, 2, 0), Quaternion.identity);
+        GameObject newDT = Instantiate(damageText, transform.position + offset, Quaternion.identity);
+        newDT.transform.LookAt(transform.position + Camera.main.transform.rotation * Vector3.forward, Camera.main.transform.rotation * Vector3.up);
         TextMesh tm = newDT.GetComponent<TextMesh>();
+        tm.color = textColor;
         tm.text = damage.ToString();
+        StartCoroutine(DeleteDamageText(newDT));
+    }
+
+    IEnumerator DeleteDamageText(GameObject dt)
+    {
+        yield return new WaitForSeconds(1.5f);
+        Destroy(dt);
     }
 }
