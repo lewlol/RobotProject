@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 _input;
 
     private PlayerStats stats;
+    private PlayerBattery pb;
 
     public bool canMove = true;
 
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody>();
         stats = GetComponent<PlayerStats>();
+        pb = GetComponent<PlayerBattery>();
     }
     private void Update()
     {
@@ -43,6 +45,8 @@ public class PlayerMovement : MonoBehaviour
 
         var rot = Quaternion.LookRotation(_input.ToIso(), Vector3.up);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, rot, _turnSpeed * Time.deltaTime);
+
+        pb.RemoveBattery(1);
     }
 
     private void Move()

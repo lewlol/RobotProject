@@ -14,8 +14,9 @@ public class PlayerBattery : MonoBehaviour
         batteryLife = stats.maxBattery;
     }
 
-    void RemoveBattery()
+    public void RemoveBattery(float amount)
     {
+        batteryLife -= amount * Time.deltaTime;
         if(batteryLife <= 0)
         {
             PlayerMovement pm = GetComponent<PlayerMovement>();
@@ -29,6 +30,14 @@ public class PlayerBattery : MonoBehaviour
         if (batteryLife >= stats.maxBattery)
         {
             batteryLife = stats.maxBattery;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.gameObject.tag == "ChargePad")
+        {
+            AddBattery(0.25f);
         }
     }
 }
