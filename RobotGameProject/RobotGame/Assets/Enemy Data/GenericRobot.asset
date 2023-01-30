@@ -9,18 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4652a5d13fb238f449faf6b3207e7664, type: 3}
-  m_Name: MiniGun
+  m_Script: {fileID: 11500000, guid: 85af3080a318ac349beecd7cedef3161, type: 3}
+  m_Name: GenericRobot
   m_EditorClassIdentifier: 
-  melee: 0
-  gun: 1
-  damage: 1
-  attackSpeed: 0.05
-  batteryCost: 0.1
-  maxHeat: 6
-  cooldownTime: 7
-  critChance: 7
-  critDamage: 45
-  isAuto: 1
-  bulletSpeed: 25
-  bulletLifetime: 1.5
+  speed: 3
+  maxHealth: 15
+  damage: 3

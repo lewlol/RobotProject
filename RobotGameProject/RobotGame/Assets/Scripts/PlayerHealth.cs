@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -20,7 +21,22 @@ public class PlayerHealth : MonoBehaviour
         health -= damage;
         if(health <= 0)
         {
-            //Death
+            StartCoroutine(PlayerDied());
         }
+    }
+
+    IEnumerator PlayerDied()
+    {
+        BoxCollider bx = GetComponent<BoxCollider>();
+        MeshRenderer mr = GetComponentInChildren<MeshRenderer>();
+        Rigidbody rb = GetComponent<Rigidbody>();
+
+        bx.enabled = false;
+        mr.enabled = false;
+        rb.constraints = RigidbodyConstraints.FreezeAll;
+
+        yield return new WaitForSeconds(5);
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 }

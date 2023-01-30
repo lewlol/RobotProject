@@ -29,7 +29,7 @@ public class EnemyHealth : MonoBehaviour
 
         if(health <= 0)
         {
-            Debug.Log("Enemy Died");
+            StartCoroutine(EnemyDeath());
         } 
     }
 
@@ -58,10 +58,29 @@ public class EnemyHealth : MonoBehaviour
             TakeDamage(bs.weaponData.damage, bs.weaponData.critChance, bs.weaponData.critDamage);
         }
     }
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            float damage = eStats.damage;
+            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
+        }
+    }
     IEnumerator DeleteDamageText(GameObject dt)
     {
         yield return new WaitForSeconds(1.5f);
         Destroy(dt);
+    }
+    IEnumerator EnemyDeath()
+    {
+        BoxCollider bx = GetComponent<BoxCollider>();
+        MeshRenderer mr = GetComponent<MeshRenderer>();
+
+
+        bx.enabled = false;
+        mr.enabled = false;
+
+        yield return new WaitForSeconds(5);
+        Destroy(gameObject);
     }
 }
