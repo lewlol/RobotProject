@@ -20,6 +20,8 @@ MonoBehaviour:
   batteryCost: 0.5
   maxHeat: 22
   cooldownTime: 5
+  critChance: 20
+  critDamage: 15
   isAuto: 1
   bulletSpeed: 16
   bulletLifetime: 3.5

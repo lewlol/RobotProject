@@ -12,7 +12,6 @@ public class Weapon : ScriptableObject
     [Header("Weapon Stats")]
     public float damage;
     public float attackSpeed;
-    public float knockback;
     public float batteryCost;
     public float maxHeat;
     public float cooldownTime;

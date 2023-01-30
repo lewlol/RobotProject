@@ -30,7 +30,7 @@ public class EnemyHealth : MonoBehaviour
         if(health <= 0)
         {
             Debug.Log("Enemy Died");
-        }
+        } 
     }
 
     public void DamageText(float damage, Color textColor)

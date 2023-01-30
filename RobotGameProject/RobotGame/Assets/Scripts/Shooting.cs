@@ -53,9 +53,11 @@ public class Shooting : MonoBehaviour
             bul.GetComponent<Rigidbody>().AddForce(transform.forward * weaponData.bulletSpeed, ForceMode.Impulse);
             Destroy(bul, weaponData.bulletLifetime);
 
+            //Copy Weapon Data to Bullet
             bul.GetComponent<BulletScript>().weaponData = weaponData;
-            heat += weaponData.batteryCost;
 
+            //Add Heat to Weapon and Remove Battery Cost from Battery
+            heat += weaponData.batteryCost;
             pb.RemoveBattery(weaponData.batteryCost);
 
             //Check Heat Count
