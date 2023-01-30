@@ -50,6 +50,15 @@ public class EnemyHealth : MonoBehaviour
         StartCoroutine(DeleteDamageText(newDT));
     }
 
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Bullet")
+        {
+            BulletScript bs = other.GetComponent<BulletScript>();
+            TakeDamage(bs.weaponData.damage, bs.weaponData.critChance, bs.weaponData.critDamage);
+        }
+    }
+
     IEnumerator DeleteDamageText(GameObject dt)
     {
         yield return new WaitForSeconds(1.5f);

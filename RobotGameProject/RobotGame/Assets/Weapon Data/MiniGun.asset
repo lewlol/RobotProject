@@ -17,7 +17,7 @@ MonoBehaviour:
   damage: 1
   attackSpeed: 0.05
   knockback: 0
-  batteryCost: 0.3
+  batteryCost: 0.1
   maxHeat: 6
   cooldownTime: 7
   isAuto: 1

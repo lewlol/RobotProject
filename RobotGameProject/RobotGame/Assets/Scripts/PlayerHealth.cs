@@ -23,15 +23,4 @@ public class PlayerHealth : MonoBehaviour
             //Death
         }
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == "Enemy")
-        {
-            EnemyHealth eHealth = collision.gameObject.GetComponent<EnemyHealth>();
-            eHealth.TakeDamage(stats.damage, stats.critChance, stats.critDamage);
-
-            Debug.Log("Hit Enemy");
-        }
-    }
 }

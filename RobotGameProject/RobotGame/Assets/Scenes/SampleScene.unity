@@ -643,7 +643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8699984464d5c104199d1e5f426b9b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: 71a279b8e5069e3428e06551ee7b10b5, type: 2}
+  weaponData: {fileID: 11400000, guid: cfc89a9dac5933f45acf389c21a5857e, type: 2}
   bullet: {fileID: 2146584013363657755, guid: aff57004c9e6924469e35cbc0f161bf8, type: 3}
 --- !u!1 &1335324404
 GameObject:

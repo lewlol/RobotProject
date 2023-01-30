@@ -16,6 +16,8 @@ public class Weapon : ScriptableObject
     public float batteryCost;
     public float maxHeat;
     public float cooldownTime;
+    public float critChance;
+    public float critDamage;
     public bool isAuto;
 
     [Header("Bullet Stats")]

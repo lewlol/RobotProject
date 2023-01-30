@@ -6,11 +6,18 @@ public class Shooting : MonoBehaviour
 {
     public Weapon weaponData; //Scriptable Object Holding all the Weapon's Data
 
-    public GameObject bullet; //
+    public GameObject bullet; //Bullet Prefab
 
     bool canShoot = true;
     bool canRemoveHeat = true;
     float heat;
+
+    PlayerBattery pb;
+
+    private void Start()
+    {
+        pb = GetComponent<PlayerBattery>();
+    }
     private void Update()
     {
         //Detect Whether the Gun is Automatic or Not
@@ -45,7 +52,11 @@ public class Shooting : MonoBehaviour
             GameObject bul = Instantiate(bullet, transform.position, Quaternion.identity);
             bul.GetComponent<Rigidbody>().AddForce(transform.forward * weaponData.bulletSpeed, ForceMode.Impulse);
             Destroy(bul, weaponData.bulletLifetime);
+
+            bul.GetComponent<BulletScript>().weaponData = weaponData;
             heat += weaponData.batteryCost;
+
+            pb.RemoveBattery(weaponData.batteryCost);
 
             //Check Heat Count
             if(heat >= weaponData.maxHeat)
