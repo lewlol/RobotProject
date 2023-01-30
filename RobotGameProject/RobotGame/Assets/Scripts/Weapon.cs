@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "Weapon Data")]
 public class Weapon : ScriptableObject
 {
     [Header("Weapon Type")]
@@ -12,4 +13,12 @@ public class Weapon : ScriptableObject
     public float damage;
     public float attackSpeed;
     public float knockback;
+    public float batteryCost;
+    public float maxHeat;
+    public float cooldownTime;
+    public bool isAuto;
+
+    [Header("Bullet Stats")]
+    public float bulletSpeed;
+    public float bulletLifetime;
 }
