@@ -16,11 +16,11 @@ MonoBehaviour:
   gun: 1
   damage: 1
   attackSpeed: 0.05
-  batteryCost: 0.1
+  batteryCost: 1
   maxHeat: 6
   cooldownTime: 7
   critChance: 7
   critDamage: 45
   isAuto: 1
-  bulletSpeed: 25
+  bulletSpeed: 20
   bulletLifetime: 1.5
