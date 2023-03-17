@@ -247,7 +247,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &436765828
 GameObject:
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 436765829}
   - component: {fileID: 436765831}
   - component: {fileID: 436765830}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,7 +458,7 @@ MonoBehaviour:
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 384
+    m_Bits: 320
   m_UseGeometry: 0
   m_DefaultArea: 0
   m_IgnoreNavMeshAgent: 1
@@ -468,7 +468,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 9701d84c7811f7e4e991c0fd3f1ba855, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 4f78d1f5a28830145b1d66624f69a85c, type: 2}
 --- !u!4 &749340420
 Transform:
   m_ObjectHideFlags: 0
@@ -481,7 +481,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -495,6 +495,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -580,6 +581,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 3177511911112538115}
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f586f8a5ed3964e99c632f8b1b911a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &977562172
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,7 +734,7 @@ Transform:
   - {fileID: 1515441333}
   - {fileID: 977562173}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1246654433
 GameObject:
@@ -735,7 +748,7 @@ GameObject:
   - component: {fileID: 1246654436}
   - component: {fileID: 1246654435}
   - component: {fileID: 1246654434}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -817,189 +830,8 @@ Transform:
   m_LocalScale: {x: 18, y: 1, z: 9}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1335324404
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1335324410}
-  - component: {fileID: 1335324409}
-  - component: {fileID: 1335324408}
-  - component: {fileID: 1335324407}
-  - component: {fileID: 1335324406}
-  - component: {fileID: 1335324413}
-  - component: {fileID: 1335324412}
-  - component: {fileID: 1335324411}
-  m_Layer: 0
-  m_Name: Enemy
-  m_TagString: Enemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!54 &1335324406
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335324404}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
---- !u!65 &1335324407
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335324404}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1335324408
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335324404}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 0c15ef625101607429df446fc0e8bf97, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1335324409
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335324404}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1335324410
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335324404}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 15}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!195 &1335324411
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335324404}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &1335324412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335324404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00cee97244897574b8eeb636f0d5c073, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1335324411}
-  player: {fileID: 3177511911112538115}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 128
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 64
-  health: 10
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 5
-  timeBetweenAttacks: 0.5
-  projectile: {fileID: 33824611}
-  sightRange: 20
-  attackRange: 15
-  playerInSightRange: 0
-  playerInAttackRange: 0
---- !u!114 &1335324413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335324404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e51d2fd2a1dd7c4b92aa3f9f192866d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eStats: {fileID: 11400000, guid: bb040cc11994a8b49842b6c71d387b75, type: 2}
-  health: 10
-  damageText: {fileID: 6829575155087014273, guid: 1d86aa6e92c91bb4a94bb23f3053e18e, type: 3}
 --- !u!1 &1369003566
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,7 +937,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1455993332}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1333,7 +1165,7 @@ GameObject:
   - component: {fileID: 1676595739}
   - component: {fileID: 1676595738}
   - component: {fileID: 1676595737}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: ChargePad
   m_TagString: ChargePad
   m_Icon: {fileID: 0}
@@ -1414,7 +1246,7 @@ Transform:
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1711980872
 GameObject:
@@ -1425,7 +1257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1711980873}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1485,7 +1317,7 @@ Transform:
   - {fileID: 1711980873}
   - {fileID: 1455993332}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5927324260284040
 Transform:
@@ -1510,7 +1342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 818762079026083590}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Roads
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1534,7 +1366,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839893215564293652}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Roads (6)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1564,7 +1396,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 598624818405969573}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roads (6)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1594,7 +1426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1138014418768045082}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Roads (8)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1623,7 +1455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138576884137672884}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 60, y: 0, z: 0}
+  m_LocalPosition: {x: 60, y: 0, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3119411806842936845}
@@ -1642,7 +1474,7 @@ GameObject:
   - component: {fileID: 1461771806701927698}
   - component: {fileID: 3451655221521282790}
   - component: {fileID: 421913878663323622}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1713,7 +1545,7 @@ GameObject:
   - component: {fileID: 6682300642784560576}
   - component: {fileID: 1002037889714484885}
   - component: {fileID: 615264157209161070}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: pCube6_pCube9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1975,7 +1807,7 @@ GameObject:
   - component: {fileID: 6460573282111347682}
   - component: {fileID: 644903198443727031}
   - component: {fileID: 980948341117612876}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: pCube6_pCube9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2091,6 +1923,24 @@ Transform:
   m_Father: {fileID: 1410792567141243927}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1225396384957176656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8927679306355170714}
+  - component: {fileID: 8474209592919554747}
+  - component: {fileID: 5486416235632078250}
+  m_Layer: 0
+  m_Name: polySurface23_Hey
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1243612353546995612
 GameObject:
   m_ObjectHideFlags: 0
@@ -2103,7 +1953,7 @@ GameObject:
   - component: {fileID: 58972314575447403}
   - component: {fileID: 4287000877666528927}
   - component: {fileID: 1243612353546995615}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2264,7 +2114,7 @@ GameObject:
   - component: {fileID: 4842235301595060007}
   - component: {fileID: 1326497525083808882}
   - component: {fileID: 1659159902341087113}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: pCube6_pCube9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2297,7 +2147,7 @@ GameObject:
   - component: {fileID: 442743300829056717}
   - component: {fileID: 4434655008186320185}
   - component: {fileID: 1708906562870275129}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2415,7 +2265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1410792567141243927}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Roads (4)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2694,7 +2544,7 @@ GameObject:
   - component: {fileID: 897956598719724537}
   - component: {fileID: 4024477886221905933}
   - component: {fileID: 2154302946165577997}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2802,7 +2652,7 @@ GameObject:
   - component: {fileID: 3625263381035331482}
   - component: {fileID: 711703165800834158}
   - component: {fileID: 2583997525861682542}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2837,7 +2687,7 @@ Transform:
   - {fileID: 6796459742245724451}
   - {fileID: 436765829}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2645106348416195141
 Transform:
@@ -2862,7 +2712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3457800442922277835}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roads (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2881,7 +2731,7 @@ GameObject:
   - component: {fileID: 1810037430885979506}
   - component: {fileID: 3403009551043117034}
   - component: {fileID: 2688400705511568460}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: charging
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2928,7 +2778,7 @@ GameObject:
   - component: {fileID: 3988880827155886520}
   - component: {fileID: 933554015042402892}
   - component: {fileID: 2794738806867153740}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2959,7 +2809,7 @@ GameObject:
   - component: {fileID: 2833637812998185660}
   - component: {fileID: 2833637812998185659}
   - component: {fileID: 2833637812998185658}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -3051,7 +2901,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!65 &2833637812998185664
 BoxCollider:
@@ -3082,8 +2932,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5341059934552486023}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 7, y: 0, z: -0}
+  m_LocalScale: {x: 0.52, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 326186652803209742}
   m_RootOrder: 0
@@ -3100,7 +2950,7 @@ GameObject:
   - component: {fileID: 9200384871243041130}
   - component: {fileID: 3383870635103091263}
   - component: {fileID: 3142319782081290692}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: pCube6_pCube9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3134,7 +2984,7 @@ Transform:
   m_Children:
   - {fileID: 1718771096680395158}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3168132935140723745
 Transform:
@@ -3149,7 +2999,7 @@ Transform:
   m_Children:
   - {fileID: 7318504421717335559}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3177511911112538115
 Transform:
@@ -3164,7 +3014,7 @@ Transform:
   m_Children:
   - {fileID: 8994849941035942212}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3178766261350957642
 Transform:
@@ -3406,20 +3256,6 @@ Transform:
   m_Father: {fileID: 3694506733068762087}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &3525032044897402613
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4296642244985365583}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &3545190419588294209
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3446,7 +3282,7 @@ GameObject:
   - component: {fileID: 2351083781106123957}
   - component: {fileID: 1949853761442713409}
   - component: {fileID: 3545190419588294209}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3527,7 +3363,7 @@ GameObject:
   - component: {fileID: 2506849585703339959}
   - component: {fileID: 1830117308155890755}
   - component: {fileID: 3700181755878188355}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3601,7 +3437,7 @@ GameObject:
   - component: {fileID: 2811514098127512594}
   - component: {fileID: 2065884188709973990}
   - component: {fileID: 3933666625492502246}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3735,7 +3571,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3694506733068762087}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roads (7)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3753,7 +3589,7 @@ GameObject:
   - component: {fileID: 6796459742245724451}
   - component: {fileID: 2440434323243888379}
   - component: {fileID: 8226867087078023758}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3783,7 +3619,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3631154417633766756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roads (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3802,7 +3638,7 @@ GameObject:
   - component: {fileID: 2941984858342810463}
   - component: {fileID: 1403988595858614443}
   - component: {fileID: 4127468233621438891}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3849,7 +3685,7 @@ GameObject:
   - component: {fileID: 7909416413493623477}
   - component: {fileID: 4366342587616741856}
   - component: {fileID: 4176651222572126747}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: pCube6_pCube9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3938,22 +3774,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &4296642244985365583
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3525032044897402613}
-  m_Layer: 0
-  m_Name: Landscape
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!23 &4366342587616741856
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4182,7 +4002,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5417833154658112027}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roads (4)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4296,7 +4116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5285720559392821529}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roads (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4356,7 +4176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5692160474606563774}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roads
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4389,7 +4209,7 @@ GameObject:
   - component: {fileID: 1263589852714450371}
   - component: {fileID: 4670960036719431318}
   - component: {fileID: 5025096054222591341}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: pCube6_pCube9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4515,7 +4335,7 @@ GameObject:
   - component: {fileID: 6601836503044946120}
   - component: {fileID: 6931480481744597820}
   - component: {fileID: 5336165822146386492}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4534,7 +4354,7 @@ GameObject:
   - component: {fileID: 6553484945909007220}
   - component: {fileID: 5975112090006257350}
   - component: {fileID: 5341059934552486024}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4564,7 +4384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4696721432725174003}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Roads (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4611,7 +4431,7 @@ GameObject:
   - component: {fileID: 6539115241757732427}
   - component: {fileID: 6994201542270920127}
   - component: {fileID: 5416752228581051583}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4656,6 +4476,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2265935933071562852}
   m_Mesh: {fileID: 4606514377997083690, guid: 299d052b38bef6b4fa5c70a9f75c4c15, type: 3}
+--- !u!23 &5486416235632078250
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225396384957176656}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0c15ef625101607429df446fc0e8bf97, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &5540436690764779626
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4675,7 +4536,7 @@ GameObject:
   - component: {fileID: 8994849941035942212}
   - component: {fileID: 6597725179566848715}
   - component: {fileID: 3198390101252006944}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -4776,7 +4637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6608356461372406326}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Roads (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4797,7 +4658,7 @@ Transform:
   - {fileID: 8705724998838335714}
   - {fileID: 1369003567}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &5975112090006257350
 MeshRenderer:
@@ -4863,7 +4724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6818807299514819604}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Roads (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4882,7 +4743,7 @@ GameObject:
   - component: {fileID: 5045878525128068711}
   - component: {fileID: 9054892068572497299}
   - component: {fileID: 6311018697723554963}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5018,7 +4879,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 25a1ceb05dc11a14b92a08b140fb80ea, type: 2}
+  - {fileID: 2100000, guid: ca3aa3fac7b30f543a7ad50cd3d9d9ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5074,7 +4935,7 @@ GameObject:
   - component: {fileID: 996986628189914574}
   - component: {fileID: 6669192434673727131}
   - component: {fileID: 6477183916533984608}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: pCube6_pCube9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5343,7 +5204,7 @@ GameObject:
   - component: {fileID: 667055966810461906}
   - component: {fileID: 6348495474091812231}
   - component: {fileID: 6734092710031425148}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: pCube6_pCube9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5376,7 +5237,7 @@ GameObject:
   - component: {fileID: 701134883557885888}
   - component: {fileID: 6404496177722193045}
   - component: {fileID: 6741739161086652270}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: pCube6_pCube9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5690,7 +5551,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7578326616683573447}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roads (5)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5761,7 +5622,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8061140184437906273}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Roads (5)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5782,6 +5643,164 @@ Transform:
   m_Father: {fileID: 8061140184437906273}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7306435854396770996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7939419662764150798}
+  - component: {fileID: 7306435854396770999}
+  - component: {fileID: 7306435854396770998}
+  - component: {fileID: 7306435854396770997}
+  - component: {fileID: 7306435854396771001}
+  - component: {fileID: 7306435854396771000}
+  - component: {fileID: 7306435854396771002}
+  m_Layer: 0
+  m_Name: Enemy
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!195 &7306435854396770997
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7306435854396770996}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 3.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 8
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &7306435854396770998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7306435854396770996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00cee97244897574b8eeb636f0d5c073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 7306435854396770997}
+  player: {fileID: 3177511911112538115}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 128
+  health: 50
+  walkPoint: {x: 0, y: 0, z: 0}
+  walkPointRange: 5
+  timeBetweenAttacks: 0.5
+  projectile: {fileID: 33824611}
+  sightRange: 10
+  attackRange: 8
+  playerInSightRange: 0
+  playerInAttackRange: 0
+--- !u!54 &7306435854396770999
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7306435854396770996}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!65 &7306435854396771000
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7306435854396770996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 8, z: 5}
+  m_Center: {x: 0, y: 4, z: 1}
+--- !u!114 &7306435854396771001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7306435854396770996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e51d2fd2a1dd7c4b92aa3f9f192866d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eStats: {fileID: 11400000, guid: bb040cc11994a8b49842b6c71d387b75, type: 2}
+  health: 50
+  damageText: {fileID: 6829575155087014273, guid: 1d86aa6e92c91bb4a94bb23f3053e18e, type: 3}
+--- !u!23 &7306435854396771002
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7306435854396770996}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7308524353569338010
 GameObject:
   m_ObjectHideFlags: 0
@@ -5958,7 +5977,7 @@ GameObject:
   - component: {fileID: 8822051097865800123}
   - component: {fileID: 4738287288493081167}
   - component: {fileID: 7781526786106207055}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6001,6 +6020,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4176651222572126748}
   m_Mesh: {fileID: 4606514377997083690, guid: 299d052b38bef6b4fa5c70a9f75c4c15, type: 3}
+--- !u!4 &7939419662764150798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7306435854396770996}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 15}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_Children:
+  - {fileID: 8927679306355170714}
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &7982048945731121115
 Transform:
   m_ObjectHideFlags: 0
@@ -6024,7 +6058,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7317278619753901653}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roads (8)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6073,7 +6107,7 @@ GameObject:
   - component: {fileID: 7040431336947440393}
   - component: {fileID: 6492886004285051133}
   - component: {fileID: 8081449112532761085}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6133,7 +6167,7 @@ GameObject:
   - component: {fileID: 7108596814663459498}
   - component: {fileID: 6415712709148338526}
   - component: {fileID: 8301681102948647006}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6180,7 +6214,7 @@ GameObject:
   - component: {fileID: 7088096867559257016}
   - component: {fileID: 6481248447405914188}
   - component: {fileID: 8344689978256871756}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6201,6 +6235,14 @@ Transform:
   m_Father: {fileID: 9145377762070879081}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8474209592919554747
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225396384957176656}
+  m_Mesh: {fileID: 195065637907669864, guid: 49c63257cb6ecc442829695a339b3dd3, type: 3}
 --- !u!1 &8476117762535424467
 GameObject:
   m_ObjectHideFlags: 0
@@ -6226,7 +6268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9057685876698769598}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Roads (7)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6259,7 +6301,7 @@ GameObject:
   - component: {fileID: 7363692101166756278}
   - component: {fileID: 6746085923955882562}
   - component: {fileID: 8620636439258469186}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: pCube6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6339,7 +6381,7 @@ GameObject:
   - component: {fileID: 3923493790895444288}
   - component: {fileID: 4633689098069290147}
   - component: {fileID: 8788373330059353473}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: floorShop
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6368,6 +6410,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7781526786106207052}
   m_Mesh: {fileID: 6606501483488557099, guid: 299d052b38bef6b4fa5c70a9f75c4c15, type: 3}
+--- !u!4 &8927679306355170714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225396384957176656}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7939419662764150798}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &8987533477478926666
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6507,7 +6563,7 @@ Transform:
   m_Children:
   - {fileID: 8368256027499465333}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &9200384871243041130
 MeshFilter:
