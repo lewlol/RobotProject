@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] float health;
+    public float health;
     public PlayerStats stats;
 
     private void Start()
@@ -19,7 +19,8 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
-        if(health <= 0)
+        CustomEventSystem.customEventSystem.HealthChange(health, stats.maxHealth);
+        if (health <= 0)
         {
             StartCoroutine(PlayerDied());
         }
