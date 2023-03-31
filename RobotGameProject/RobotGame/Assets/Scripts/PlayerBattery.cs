@@ -17,7 +17,6 @@ public class PlayerBattery : MonoBehaviour
     public void RemoveBattery(float amount)
     {
         batteryLife -= amount * Time.deltaTime;
-        CustomEventSystem.customEventSystem.BatteryChange(batteryLife, stats.maxBattery);
         if(batteryLife <= 0)
         {
             PlayerMovement pm = GetComponent<PlayerMovement>();
