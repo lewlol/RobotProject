@@ -30,4 +30,13 @@ public class CustomEventSystem : MonoBehaviour
         if(OnBatteryChange != null)
             OnBatteryChange();
     }
+
+    public event Action OnTriggerEnemyLocation;
+    public void TriggerEnemyLocation()
+    {
+        if(OnTriggerEnemyLocation != null)
+        {
+            OnTriggerEnemyLocation();
+        }
+    }
 }
