@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class EnemyLocation : MonoBehaviour
 {
-    public float minSpawnPoint;
-    public float maxSpawnPoint;
+    public float minXSpawnPoint;
+    public float maxXSpawnPoint;
 
-    float enemyCount;
+    public float minZSpawnPoint;
+    public float maxZSpawnPoint;
+
+    public float enemyCount;
 
     public GameObject[] enemies;
     private void Start()
@@ -17,10 +20,12 @@ public class EnemyLocation : MonoBehaviour
 
     public void SpawnEnemies()
     {
+        Debug.Log("Triggered Location");
+
         for (int i = 0; i < enemyCount; i++)
         {
             int e = Random.Range(0, enemies.Length);
-            Vector3 spawnPoint = new Vector3(Random.Range(minSpawnPoint, maxSpawnPoint), 0, Random.Range(minSpawnPoint, maxSpawnPoint));
+            Vector3 spawnPoint = new Vector3(Random.Range(minXSpawnPoint, maxXSpawnPoint), 0.5f, Random.Range(minZSpawnPoint, maxZSpawnPoint));
             GameObject enemy = Instantiate(enemies[e], spawnPoint, Quaternion.identity);
         }
     }

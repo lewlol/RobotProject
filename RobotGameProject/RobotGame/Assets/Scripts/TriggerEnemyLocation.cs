@@ -9,6 +9,7 @@ public class TriggerEnemyLocation : MonoBehaviour
         if(col.gameObject.tag == "Player")
         {     
             CustomEventSystem.customEventSystem.TriggerEnemyLocation();
+            Destroy(gameObject);
         }
     }
 }
