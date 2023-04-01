@@ -19,6 +19,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
+        CustomEventSystem.customEventSystem.HealthChange(health, stats.maxHealth);
         if(health <= 0)
         {
             StartCoroutine(PlayerDied());

@@ -25,7 +25,7 @@ public class EnemyLocation : MonoBehaviour
         for (int i = 0; i < enemyCount; i++)
         {
             int e = Random.Range(0, enemies.Length);
-            Vector3 spawnPoint = new Vector3(Random.Range(minXSpawnPoint, maxXSpawnPoint), 0.5f, Random.Range(minZSpawnPoint, maxZSpawnPoint));
+            Vector3 spawnPoint = new Vector3(Random.Range(minXSpawnPoint, maxXSpawnPoint), 1.5f, Random.Range(minZSpawnPoint, maxZSpawnPoint));
             GameObject enemy = Instantiate(enemies[e], spawnPoint, Quaternion.identity);
         }
     }
