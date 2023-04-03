@@ -39,4 +39,15 @@ public class CustomEventSystem : MonoBehaviour
             OnTriggerEnemyLocation();
         }
     }
+
+    public event Action OnEnemyInLocationDied;
+    [HideInInspector] public GameObject e;
+    public void EnemyInLocationDied(GameObject enemy)
+    {
+        e = enemy;
+        if(OnEnemyInLocationDied != null)
+        {
+            OnEnemyInLocationDied();
+        }
+    }
 }
