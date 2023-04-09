@@ -21,7 +21,7 @@ public class PlayerInventory : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetButtonDown("OpenInventory"))
+        if(Input.GetButtonDown("Inventory"))
             OpenCloseInventory();
     }
     public void OpenCloseInventory()
