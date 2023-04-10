@@ -73,15 +73,8 @@ public class EnemyHealth : MonoBehaviour
     }
     IEnumerator EnemyDeath()
     {
-        BoxCollider bx = GetComponent<BoxCollider>();
-        MeshRenderer mr = GetComponent<MeshRenderer>();
-
-        bx.enabled = false;
-        mr.enabled = false;
-
         GetComponent<LootBag>().InstantiateLoot(transform.position);
-
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(0.1f);
         Destroy(gameObject);
     }
 }

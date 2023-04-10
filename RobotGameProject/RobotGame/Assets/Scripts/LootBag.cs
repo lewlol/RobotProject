@@ -33,7 +33,7 @@ public class LootBag : MonoBehaviour
         Loot droppedItem = GetDroppedItem();
         if(droppedItem != null)
         {
-            GameObject loot = Instantiate(droppedItemPrefab, spawnLocation + new Vector3(0, 3, 0), Quaternion.identity);
+            GameObject loot = Instantiate(droppedItemPrefab, spawnLocation + new Vector3(0, 0.5f, 0), Quaternion.identity);
             loot.GetComponent<MeshFilter>().mesh = droppedItem.lootMesh;
             loot.GetComponent<MeshRenderer>().material = droppedItem.lootMaterial;
             loot.GetComponent<LootItem>().lootType = droppedItem.lootType;

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d64a4dcb85d6eb547ad99560e3dda7d2, type: 3}
   m_Name: Copper
   m_EditorClassIdentifier: 
-  lootMesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  lootMaterial: {fileID: 0}
+  lootMesh: {fileID: -8191989481505378043, guid: 78504b9115ad27a4f89d8599af8f2723, type: 3}
+  lootMaterial: {fileID: 2100000, guid: 9f7bd42c0124e49418dad63fcbf65cfa, type: 2}
   lootName: Copper
   dropChance: 20
   lootType: 3

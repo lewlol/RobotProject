@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d64a4dcb85d6eb547ad99560e3dda7d2, type: 3}
   m_Name: RefinedMetal
   m_EditorClassIdentifier: 
-  lootMesh: {fileID: -662577359962615405, guid: 71bbc1f530f91d4448b3767c8de6e280, type: 3}
+  lootMesh: {fileID: -8191989481505378043, guid: 78504b9115ad27a4f89d8599af8f2723, type: 3}
   lootMaterial: {fileID: 2100000, guid: b922bc886d03f334ab842465c9ef96e8, type: 2}
   lootName: Refined Metal
   dropChance: 35

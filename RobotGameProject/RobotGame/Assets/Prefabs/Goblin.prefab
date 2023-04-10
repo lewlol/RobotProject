@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1835810273711828981}
   - component: {fileID: 1311052284392338764}
-  - component: {fileID: 1311052284392338765}
   - component: {fileID: 1311052284392338766}
   - component: {fileID: 1311052284392338754}
   - component: {fileID: 1311052284392338755}
   - component: {fileID: 1311052284392338753}
   - component: {fileID: 389757874409311195}
+  - component: {fileID: -6123328250084930219}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Enemy
@@ -54,35 +54,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!114 &1311052284392338765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1311052284392338767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00cee97244897574b8eeb636f0d5c073, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1311052284392338766}
-  player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 128
-  health: 50
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 5
-  timeBetweenAttacks: 0.5
-  projectile: {fileID: 8261288802410382202, guid: a88978bdc44257a4793a75654e5ee29c, type: 3}
-  sightRange: 10
-  attackRange: 8
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!195 &1311052284392338766
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -191,6 +162,20 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4a0d64d6e4a18e54b9015597d39bf2bd, type: 2}
   - {fileID: 11400000, guid: d07a35c0d82c71d48b11620b1238c073, type: 2}
   - {fileID: 11400000, guid: bcc19010762745748a099475d7dfd020, type: 2}
+--- !u!114 &-6123328250084930219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311052284392338767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c49580fe13cfd94c9325efb12b73ec7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eStats: {fileID: 11400000, guid: bb040cc11994a8b49842b6c71d387b75, type: 2}
+  agent: {fileID: 1311052284392338766}
 --- !u!1 &7373830944425223339
 GameObject:
   m_ObjectHideFlags: 0
