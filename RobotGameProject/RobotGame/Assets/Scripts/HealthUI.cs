@@ -15,7 +15,6 @@ public class HealthUI : MonoBehaviour
     }
     public void HealthUIUpdate()
     {
-        Debug.Log("Health UI");
         healthSlider.value = CustomEventSystem.customEventSystem.h;
         healthSlider.maxValue = CustomEventSystem.customEventSystem.mh;
     }
