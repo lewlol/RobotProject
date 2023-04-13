@@ -17,5 +17,5 @@ MonoBehaviour:
   damage: 3
   chaseRadius: 10
   attackRadius: 3
-  attackDelay: 0
-  attackDistance: 0
+  attackDelay: 1
+  attackDistance: 1

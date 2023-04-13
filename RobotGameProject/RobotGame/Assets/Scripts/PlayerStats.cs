@@ -10,6 +10,7 @@ public class PlayerStats : MonoBehaviour
 
     [Header("Combat")]
     public float maxHealth; //Maximum Health
+    public float strength;
 
     [Header("Misc")]
     public int intelligence; //Robot Intelligence

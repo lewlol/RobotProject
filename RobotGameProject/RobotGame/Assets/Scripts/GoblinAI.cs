@@ -40,8 +40,8 @@ public class GoblinAI : MonoBehaviour
     {
         agent.SetDestination(transform.position);
         transform.LookAt(player.position);
-        StartCoroutine(AttackDelay());
         StartCoroutine(AttackRaycasting());
+        StartCoroutine(AttackDelay()); 
     }
 
     IEnumerator AttackDelay()
