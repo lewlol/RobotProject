@@ -4,7 +4,19 @@ using UnityEngine;
 
 public class PlayerUpgrading : MonoBehaviour
 {
+    public GameObject upgradeMenu;
+    bool upgradeMenuActive;
+
     public GameObject player;
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            upgradeMenuActive = !upgradeMenuActive;
+            upgradeMenu.SetActive(upgradeMenuActive);
+        }
+    }
     public void HeadUpgrade()
     {
         player.GetComponent<PlayerStats>().maxBattery += 10;
