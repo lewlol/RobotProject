@@ -25,7 +25,7 @@ public class CamFollow : MonoBehaviour
 
         if(Input.GetAxis("Mouse ScrollWheel") < 0 && cam.orthographicSize < minZoom)
         {
-            cam.orthographicSize += 0.2f; //fix
+            cam.orthographicSize += 0.2f;
         }
     }
 }
