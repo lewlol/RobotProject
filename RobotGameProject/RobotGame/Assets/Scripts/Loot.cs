@@ -9,7 +9,7 @@ public class Loot : ScriptableObject
     public Material lootMaterial;
     public string lootName;
     public float dropChance;
-    public int lootType;
+    public LootType lootType;
 
     public Loot(string lootName, int dropChance)
     {

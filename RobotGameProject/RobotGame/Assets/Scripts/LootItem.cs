@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LootItem : MonoBehaviour
 {
-    public int lootType;
+    public LootType lootType;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -19,20 +19,19 @@ public class LootItem : MonoBehaviour
 
     public void AddResource(PlayerInventory pi)
     {
-        if (lootType == 1)
+        if (lootType == LootType.RawMetal)
         {
             pi.rawMetal++;
-            return;
         }
-        if(lootType == 2)
+        if(lootType == LootType.RefinedMetal)
         {
             pi.refinedMetal++;
-            return;
         }
-        if(lootType == 3)
+        if(lootType == LootType.Copper)
         {
             pi.copper++;
-            return;
         }
+
+        pi.SetTexts();
     }
 }
