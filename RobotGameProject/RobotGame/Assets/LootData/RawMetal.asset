@@ -16,4 +16,4 @@ MonoBehaviour:
   lootMaterial: {fileID: 2100000, guid: 1e1c6a0a64beb49ec96272beefa468a5, type: 2}
   lootName: Raw Metal
   dropChance: 100
-  lootType: 1
+  lootType: 0

@@ -16,4 +16,4 @@ MonoBehaviour:
   lootMaterial: {fileID: 2100000, guid: 9f7bd42c0124e49418dad63fcbf65cfa, type: 2}
   lootName: Copper
   dropChance: 20
-  lootType: 3
+  lootType: 2

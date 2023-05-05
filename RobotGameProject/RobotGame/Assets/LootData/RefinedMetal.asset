@@ -16,4 +16,4 @@ MonoBehaviour:
   lootMaterial: {fileID: 2100000, guid: b922bc886d03f334ab842465c9ef96e8, type: 2}
   lootName: Refined Metal
   dropChance: 35
-  lootType: 2
+  lootType: 1
